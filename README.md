@@ -114,7 +114,9 @@ sudo iptables -t nat -A POSTROUTING -s 10.10.27.0/24 -d 10.9.41.0/24 -J MASQUERA
 ## Start the VPN:
 ### Start the VPN on both ends:
 
-```bash sudo ipsec restart ```
+```bash
+sudo ipsec restart
+```
 Get the status of the tunnel, in this case we are logged onto our Site A (Paris) Server:
 ```bash
 sudo ipsec status
